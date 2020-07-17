@@ -1,0 +1,52 @@
+
+/* Small Device Responsive Code Here */
+@media(min-width: 576px){
+	.hero-section {
+		height: 500px;
+	}
+	.hero-section .hero-container {
+		margin-top: 200px;
+	}
+}
+/* Medium Device Responsive Code Here */
+@media(min-width: 768px){
+	
+}
+/* Large Device Responsive Code Here */
+@media(min-width: 992px){
+	
+}
+/* Extra Large Device Responsive Code Here */
+@media(min-width: 1200px){
+	.hero-section {
+		background-attachment: fixed;
+		height: 100vh;
+	}
+	.header-area {
+		left: 0 !important;
+	}
+	.main {
+		margin-left: 300px;
+	}
+	.hero-section .hero-container {
+		margin-top: 250px;
+	}
+}
+
+
+/* Extra Small Device Responsive Code Here */
+@media(max-width: 575px){
+	.mobile-view {
+		display: block;
+	}
+	.hero-section {
+		height: 500px;
+	}
+	.hero-section .hero-container {
+		margin-top: 200px;
+	}
+	.back-top {
+		bottom: 40px;
+	}
+}
+

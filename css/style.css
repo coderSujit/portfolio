@@ -1,0 +1,479 @@
+/*
+	* Themeplate Name: iPortfolio - v1.0.0
+	* Themeolate URL: 
+	* Author: Sujit Sarkar
+	* License: 
+*/
+
+/*============ General ============*/
+body {
+    font-family: 'Open Sans',sans-serif;
+}
+.container {
+    margin: auto;
+}
+a:hover {
+	text-decoration: none;
+}
+/*  Preloader   */
+.preloader {
+    position: fixed;
+	width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 99999999;
+}
+.preloader .loader {
+	position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: preloader 1s linear infinite;
+    transform: translate(-50%,-50%);
+}
+@keyframes preloader {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/*  Back to top */
+.back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0;
+}
+/*=============================
+	1:HELPER
+=============================*/
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+button:focus {
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+.left {
+	left: 0 !important;
+}
+section {
+	padding: 50px 0;
+}
+.section-heading h2 {
+	position: relative;
+    color: #173b6c;
+    font-weight: 700;
+}
+.section-heading h2.section-title::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+    background: #109DDD;
+}
+.section-heading p {
+	font-size: 17px;
+}
+.btn-primary.focus,
+.btn-primary:focus {
+    box-shadow: 0 0 0 0 rgba(38, 143, 255, .5);
+}
+/*============================
+	2:MOBILE VIEW
+=============================*/
+.mobile-view {
+	position: fixed;
+	top: 15px;
+	right: 20px;
+	background: none;
+	border: none;
+	z-index: 9999;
+}
+.mobile-view i {
+	color: #149DDD;
+	font-size: 25px;
+}
+.mobile-view i.fa-times {
+	color: #333;
+}
+/*============================
+	3:HEADER 
+=============================*/
+header.header-area {
+	width: 300px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: -150%;
+	background: #040B14;
+	z-index: 999;
+	transition: all ease-in-out 0.5s;
+	overflow-y: auto;
+}
+header.header-area .profile .logo img {
+	width: 120px;
+	height: 120px;
+	border: 7px solid #2C2F3F;
+}
+header.header-area .profile .profile-social a i {
+	width: 32px;
+    height: 32px;
+    text-align: center;
+    background: #2C2F3F;
+    color: #fff;
+    line-height: 32px;
+    border-radius: 50%;
+    margin: 0 2px;
+    transition: 0.30s;
+}
+header.header-area .profile .profile-social a i:hover {
+	background: #149ddd;
+}
+header.header-area .nav-menu ul {
+	list-style: none;
+}
+header.header-area .nav-menu ul li a {
+	display: flex;
+    align-items: center;
+    padding: 7px 25px;
+    color: #92949c;
+    font-family: arial;
+    margin-bottom: 10px;
+    transition: 0.30s;
+}
+header.header-area .nav-menu ul li a:hover span {
+	color: #fff;
+}
+header.header-area .nav-menu ul li a:hover i {
+	color: #149ddd;
+}
+header.header-area .nav-menu ul li.active a span {
+    color: #fff;
+}
+header.header-area .nav-menu ul li.active a i {
+    color: #149ddd;  
+}
+header.header-area .nav-menu ul li a:hover {
+	text-decoration: none;
+}
+header.header-area .nav-menu ul li a i {
+	font-size: 23px;
+}
+header.header-area .nav-menu ul li a span {
+	transition: 0.30s;
+	font-size: 14px;
+}
+
+/*=================================
+	4:HERO SECTION
+==================================*/
+.hero-section {
+	background-image: linear-gradient(rgba(5,13,24,0.3),rgba(5,13,24,0.3)), url(../images/hero-bg.jpg);
+	background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    height: 80vh;
+}
+.hero-section .hero-container {
+	min-width: 300px;
+	margin-top: 250px;
+	color: #fff;
+}
+.hero-section .hero-container h2 {
+	font-size: 50px;
+	font-weight: bold;
+}
+.typed {
+	border-bottom: 2px solid #149ddd;
+}
+
+/*==============================
+	5:MAIN SECTION 
+===============================*/
+
+/*==============================
+	5.1:ABOUT SECTION
+===============================*/
+.about-area ul li {
+	margin-bottom: 7px;
+}
+.about-area ul li i {
+	margin-right: 5px;
+}
+.about-area ul li span {
+	font-size: 18px;
+}
+
+/*==============================
+	5.2:FACTS SECTION
+===============================*/
+.facts-area .count-box i {
+	font-size: 40px;
+}
+.facts-area .count-box span {
+	font-size: 45px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+
+/*==============================
+	5.3:SKILL SECTION
+===============================*/
+.skill-area {
+	background: #F5F8FD;
+}
+.skill-area .skill span {
+	color: #050d18;
+	font-weight: 600;
+}
+.skill-area .skill .progress {
+	height: 0.5rem;
+	border-radius: 0;
+	margin-top: 5px;
+}
+
+
+/*==============================
+	5.3:SKILL SECTION
+===============================*/
+.resume-section .resume-item {
+	position: relative;
+    border-left: 2px solid #004085;
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+}
+.resume-section .resume-item::before {
+	content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #004085;
+    top: 0;
+    left: -10px;
+    background: #fff;
+    border-radius: 50%;
+}
+.resume-section .resume-item h4 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+/*==============================
+	5.4:PORTFOLIO SECTION
+===============================*/
+.portfolio-area {
+	background: #F5F8FD;
+}
+.portfolio-area ul {
+	width: 380px;
+    margin: auto;
+    background: #fff;
+    border-radius: 50px;
+}
+.portfolio-area ul li {
+	padding: 5px 10px;
+    font-weight: bold;
+    margin: 0 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.portfolio-area ul li.active {
+	color: #149DDD;
+}
+.portfolio-area .portfolio-wrap {
+	position: relative;
+	overflow: hidden;
+}
+.portfolio-area .portfolio-wrap .portfolio-link {
+    background: rgba(20, 157, 221, 0.75);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    transition: all 0.30s;
+    opacity: 0;
+}
+.portfolio-area .portfolio-wrap:hover .portfolio-link {
+	bottom: 0;
+	opacity: 1;
+}
+.portfolio-area .portfolio-wrap img {
+	transition: all 0.30s;
+}
+.portfolio-area .portfolio-wrap:hover img {
+	opacity: 0.7;
+}
+.portfolio-area .portfolio-wrap .portfolio-link a {
+    padding: 5px 0px;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.30s;
+    width: 50%;
+}
+.portfolio-area .portfolio-wrap .portfolio-link a:hover {
+    background: #149DDD;
+}
+
+
+/*==============================
+	5.5:SERVICES SECTION
+===============================*/
+.service-section .media:hover .media-icon {
+	background: #fff;
+	color: #149ddd;
+}
+.service-section .media .media-icon {
+	width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    background: #149ddd;
+    border: 1px solid #149ddd;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 1s;
+}
+.service-section .media .media-body p.media-title {
+	font-size: 22px;
+    font-weight: bold;
+    font-family: arial;
+    cursor: pointer;
+    transition: all 0.30s;
+}
+.service-section .media .media-body p.media-title:hover {
+	color: #149ddd;
+}
+.service-section .media .media-body p {
+	font-size: 15px;
+}
+
+
+/*==============================
+	5.6:TESTIMONIALS SECTION
+===============================*/
+.testimonial-section {
+	background: #F5F8FD;
+}
+.testimonial-section .testimonial .card {
+	border: none;
+}
+.testimonial-section .testimonial .card::after {
+    content: "";
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+}
+.testimonial-section .testimonial .card .card-body p i.fa {
+	color: #C3E8FA;
+	font-size: 25px;
+}
+.testimonial-section .testimonial .item-img {
+	margin-top: 30px;
+}
+.testimonial-section .testimonial .item-img img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;	
+	margin: 0 auto;
+}
+.testimonial-section .testimonial .item-img p.title {
+	font-weight: bold;
+	font-size: 23px;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+.testimonial-section .testimonial .item-img p {
+	color: #333;
+}
+.testimonial-section .owl-nav {
+	display: none;
+}
+.testimonial-section .owl-dots {
+	text-align: center;
+}
+.testimonial-section .owl-dots .owl-dot {
+	width: 13px;
+    height: 13px;
+    background: #d9dbde;
+    margin: 0 3px;
+    border-radius: 50%;
+}
+.testimonial-section .owl-dots .owl-dot.active {
+	background: #149ddd;
+}
+/*==============================
+	5.7:CONTACT SECTION
+===============================*/
+.contact-section .contact-offline .media .media-icon {
+	width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background: #dff3fc;
+    color: #149ddd;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.30s;
+}
+.contact-section .contact-offline .media:hover .media-icon {
+	background: #149DDD;
+	color: #fff;
+}
+.contact-section .contact-offline .media .media-body .media-title {
+	font-size: 22px;
+    font-weight: bold;
+    font-family: arial;
+    cursor: pointer;
+    transition: all 0.30s;
+    margin-bottom: 0;
+}
+.contact-section .contact-offline .media .media-body p {
+	font-size: 15px;
+}
+.form-group .error {
+	color: red;
+	font-weight: 400;
+}
+.msg-loader img,
+.msg-loader .alert {
+    display: none;
+}
